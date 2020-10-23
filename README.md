@@ -27,7 +27,7 @@ No frontend Vue.js, no arquivo **api.js** você também precisará alterar o val
 
 - *url.do.seu.backend*
 
-***Constantes com o mesmo nome no Arduino e no backend devem ter os mesmos valores atribuídos***
+***Constantes com o mesmo nome no Arduino e no backend devem ter os mesmos valores atribuídos!***
 
 ### Vejamos um exemplo
 Se no Arduino você colocou o valor **192.168.1.10** em *url.do.seu.servidor.mqtt*, no backend você precisará fazer **mqtt.servidor=192.168.1.10**.
@@ -35,3 +35,19 @@ Se no Arduino você colocou o valor **192.168.1.10** em *url.do.seu.servidor.mqt
 ## Circuito
 
 Na pasta Arduino há o arquivo do circuito para edição no software [Fritzing](https://fritzing.org/) e também sua imagem JPG.
+
+## Vue.js
+
+O projeto do Vue foi sem as dependências, portanto, você precisará instalá-las antes de executá-lo ou construí-lo.
+
+`npm install`
+
+Se você for usuário do Linux,talvez precise executar o comando como superusuário:
+
+`sudo npm install`
+
+Depois de tudo instalado, você só precisará indicar a URL do seu backend (veja acima) e executar o projeto:
+
+`npm run serve`
+
+Para dar build para produção, utilize `npm run build` e faça o deploy da pasta ***dist*** que será gerada.
