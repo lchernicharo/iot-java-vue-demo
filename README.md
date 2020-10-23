@@ -50,4 +50,4 @@ Depois de tudo instalado, você só precisará indicar a URL do seu backend (vej
 
 `npm run serve`
 
-Para dar build para produção, utilize `npm run build` e faça o deploy da pasta ***dist*** que será gerada.
+Para dar build para produção, utilize `npm run build` e faça o deploy do conteúdo da pasta ***dist*** que será gerada.
